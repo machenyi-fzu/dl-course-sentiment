@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+*.pt
+.DS_Store
+report/pages_preview/
+*.egg-info/
+.ipynb_checkpoints/

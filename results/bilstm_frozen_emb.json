@@ -1,0 +1,79 @@
+{
+  "method": "BiLSTM (bilstm_frozen_emb)",
+  "embedding_source": "random_frozen_embedding",
+  "freeze_embedding": true,
+  "vocab_size": 19366,
+  "emb_dim": 100,
+  "hidden": 128,
+  "max_len": 128,
+  "epochs": 6,
+  "batch_size": 64,
+  "lr": 0.001,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.6069336160024007,
+      "val_accuracy": 0.7366666666666667,
+      "val_macro_f1": 0.7362086956521738
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.47983647346496583,
+      "val_accuracy": 0.7333333333333333,
+      "val_macro_f1": 0.7271952259164536
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.42883937517801923,
+      "val_accuracy": 0.78,
+      "val_macro_f1": 0.7798801569743528
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.3711378323038419,
+      "val_accuracy": 0.7541666666666667,
+      "val_macro_f1": 0.7514699429574375
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.3366184793909391,
+      "val_accuracy": 0.7733333333333333,
+      "val_macro_f1": 0.7711201927527005
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.29679537226756414,
+      "val_accuracy": 0.835,
+      "val_macro_f1": 0.8349958748968724
+    }
+  ],
+  "val": {
+    "accuracy": 0.835,
+    "macro_f1": 0.8349958748968724,
+    "confusion_matrix": [
+      [
+        498,
+        109
+      ],
+      [
+        89,
+        504
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 0.8433333333333334,
+    "macro_f1": 0.8430154395985203,
+    "confusion_matrix": [
+      [
+        479,
+        113
+      ],
+      [
+        75,
+        533
+      ]
+    ]
+  },
+  "elapsed_sec": 111.95974206924438
+}

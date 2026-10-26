@@ -1,0 +1,38 @@
+{
+  "method": "TF-IDF + LinearSVM",
+  "val": {
+    "accuracy": 0.9058333333333334,
+    "macro_f1": 0.9057337646222156,
+    "confusion_matrix": [
+      [
+        563,
+        44
+      ],
+      [
+        69,
+        524
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 0.915,
+    "macro_f1": 0.9149940968122786,
+    "confusion_matrix": [
+      [
+        544,
+        48
+      ],
+      [
+        54,
+        554
+      ]
+    ]
+  },
+  "elapsed_sec": 4.108346700668335,
+  "vocab_size": 30000,
+  "max_features": 30000,
+  "ngram_range": [
+    1,
+    2
+  ]
+}

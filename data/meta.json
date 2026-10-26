@@ -1,0 +1,30 @@
+{
+  "source": "lansinuote/ChnSentiCorp",
+  "seed": 42,
+  "splits": {
+    "train": {
+      "n": 9600,
+      "label_counts": {
+        "0": 4801,
+        "1": 4799
+      },
+      "path": "data/train.csv"
+    },
+    "validation": {
+      "n": 1200,
+      "label_counts": {
+        "0": 607,
+        "1": 593
+      },
+      "path": "data/validation.csv"
+    },
+    "test": {
+      "n": 1200,
+      "label_counts": {
+        "1": 608,
+        "0": 592
+      },
+      "path": "data/test.csv"
+    }
+  }
+}

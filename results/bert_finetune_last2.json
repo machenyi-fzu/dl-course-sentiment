@@ -1,0 +1,59 @@
+{
+  "method": "BERT (bert_finetune_last2)",
+  "model_name": "hfl/rbt3",
+  "freeze_encoder": true,
+  "unfreeze_last_n": 2,
+  "max_len": 128,
+  "batch_size": 16,
+  "epochs": 2,
+  "lr": 2e-05,
+  "trainable_params": 14767874,
+  "total_params": 38478338,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.39908203267181913,
+      "train_acc": 0.8139583333333333,
+      "val_loss": 0.309556232492129,
+      "val_accuracy": 0.8883333333333333,
+      "val_macro_f1": 0.8883283701497844
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.2548823083440463,
+      "train_acc": 0.905,
+      "val_loss": 0.2907929398864508,
+      "val_accuracy": 0.8925,
+      "val_macro_f1": 0.8924993281208007
+    }
+  ],
+  "val": {
+    "accuracy": 0.8925,
+    "macro_f1": 0.8924993281208007,
+    "confusion_matrix": [
+      [
+        537,
+        70
+      ],
+      [
+        59,
+        534
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 0.9,
+    "macro_f1": 0.899888765294772,
+    "confusion_matrix": [
+      [
+        520,
+        72
+      ],
+      [
+        48,
+        560
+      ]
+    ]
+  },
+  "elapsed_sec": 490.7715120315552
+}

@@ -1,0 +1,67 @@
+{
+  "method": "BERT (bert_freeze)",
+  "model_name": "hfl/rbt3",
+  "freeze_encoder": true,
+  "unfreeze_last_n": 0,
+  "max_len": 128,
+  "batch_size": 16,
+  "epochs": 3,
+  "lr": 0.002,
+  "trainable_params": 1538,
+  "total_params": 38478338,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5989791834602753,
+      "train_acc": 0.6640625,
+      "val_loss": 0.5504596296946208,
+      "val_accuracy": 0.7216666666666667,
+      "val_macro_f1": 0.706824665350011
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.5333221413443486,
+      "train_acc": 0.734375,
+      "val_loss": 0.4987054475148519,
+      "val_accuracy": 0.7633333333333333,
+      "val_macro_f1": 0.7568465393440564
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.49480022452771666,
+      "train_acc": 0.7630208333333334,
+      "val_loss": 0.43039091527462003,
+      "val_accuracy": 0.8058333333333333,
+      "val_macro_f1": 0.8055350186501375
+    }
+  ],
+  "val": {
+    "accuracy": 0.8058333333333333,
+    "macro_f1": 0.8055350186501375,
+    "confusion_matrix": [
+      [
+        460,
+        147
+      ],
+      [
+        86,
+        507
+      ]
+    ]
+  },
+  "test": {
+    "accuracy": 0.7991666666666667,
+    "macro_f1": 0.7971037471963204,
+    "confusion_matrix": [
+      [
+        419,
+        173
+      ],
+      [
+        68,
+        540
+      ]
+    ]
+  },
+  "elapsed_sec": 462.147611618042
+}
